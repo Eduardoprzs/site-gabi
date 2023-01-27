@@ -1,0 +1,102 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css";
+
+
+*{
+    border: solid 0px rgba(255, 255, 255, 0.452);
+}
+#hometab{
+    width: 25px;
+}
+.iconscss{
+    margin:0;
+    padding: 0;
+    border: 0;
+    width: 15px;
+    height: 15px;
+    position: relative;
+    bottom: 2px;
+}
+
+
+
+.static{
+    position: fixed;
+    left:8%;
+}
+
+.about-text {
+    flex-direction: column;
+    background-color: rgba(233, 236, 238, 0.568);
+            
+}
+  
+.card-img-top{
+    width: 286px;
+    height: 308px;
+}
+.caixa{
+    align-items: center;
+    height: 800px;
+    justify-content: space-between;
+    
+}
+.cartao:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.cartao2:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.cartao{
+    
+    height: 500px;
+}
+.cartao2{
+    
+    height: 500px;
+    
+}
+
+
+.containercaroousel{
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-inner{
+    width: 500px;
+    height: 500px;
+}
+
+#carouselExampleCaptions{
+    width: 500px;
+    height: 500px;
+}
+
+
+  
+  
+  
+  #corplayer {
+    
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+  }
+  
+  
+  
+  
+
+
+
+  

@@ -1,0 +1,194 @@
+
+.barra-principal{
+    width: 100%;
+    margin-block-end: 0em;
+    margin-block-start: 0em;
+
+}
+
+.cardcomentarios{
+    width: 100%;
+}
+.img-foto{
+    height: 160px;
+    width: 160px;
+}
+
+.comentario{
+    display: flex;
+    flex-direction: row-reverse;
+    
+}
+.cardcoment{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row-reverse;
+}
+
+.bordacinza{
+    border: solid 2px rgba(150, 150, 150, 0.534);
+    
+}
+.letraescura{
+    color:  rgba(0, 0, 0, 0.623);
+}
+
+.bordapreta{
+    border: solid 2px rgba(0, 0, 0, 0.623);
+}
+
+.bordasombra{
+    box-shadow: rgba(0, 0, 0, 0.123) 10px 10px ;
+}
+
+div#playercontinuo{
+    color: rgb(150, 150, 150);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   right: 8px
+   
+} 
+
+.boxmusica{
+    width: 250px;
+    
+}
+
+img.imgplayer {
+    margin-top: 10px;
+    width: 200px;
+    height: 100px;
+    border: solid 2px black;
+}
+
+div.descricao {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   
+    
+}
+
+div.nomemsc {
+    font-size: 18px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.duracao {
+    width: 210px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column
+    
+}
+
+.barra {
+    width: 200px;
+    height: 6px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: flex-start;
+}
+
+progress {
+    height: 6px;
+    width: 0;
+    background-color: #333;
+    
+}
+
+.ponto {
+    width: 20px;
+    height: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+    margin-left: -10px;
+}
+
+.tempo {
+    margin-top: 10px;
+    display: flex;
+    width: 230px;
+    justify-content: space-between;
+    
+    
+}
+
+.player {
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+    
+}
+
+.botao-play, .botao-pause {
+    font-size: 25px;
+    cursor: pointer;
+    
+}
+
+.setas {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.botao-pause {
+    display: none;
+}
+
+#responsivoaprr{
+   display: none
+}
+
+
+@media (max-width: 414px){
+   
+    div, nav {
+        overflow-x: hidden;
+        
+    }
+
+    .caixa{
+        height: auto;
+        flex-direction: column;
+    }
+
+    .nav-item {
+       padding: 0;
+    }
+    #playercontinuo{
+        margin: 0;
+        width: 80px;
+        
+    }
+    .letraspq{
+        font-size: 1px;
+    }
+    
+   .botaoalbum{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+      
+   .letraescura{
+    font-size: 20px;
+   }
+
+   .cntnos{
+    padding-top: 50px;
+    padding-bottom: 25px;
+    
+   }
+}
