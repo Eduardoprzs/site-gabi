@@ -1,3 +1,8 @@
+.teste{
+    display: none;
+    
+}
+
 
 .barra-principal{
     width: 100%;
@@ -190,5 +195,9 @@ progress {
     padding-top: 50px;
     padding-bottom: 25px;
     
+   }
+
+   .comentmudar{
+    display: none;
    }
 }
