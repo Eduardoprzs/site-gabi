@@ -1,14 +1,21 @@
+window.onload = function(){
+    document.querySelector('.botao-pause').style.display = 'block';
+    document.querySelector('.botao-play').style.display = 'none';
+}
+
 let musicas = [
-    {titulo:'Gatinha manhosa', artista:'Erasmo Carlos', src:'musicas/10 - Gatinha Manhosa.mp3', img:'imagens/erasmo.jpg'},
-    {titulo:'Samba raiz', artista:'Bossa Nova Brasil', src:'musicas/Ella Vater - The Mini Vandals.mp3', img:'imagens/samba.jpg'},
-    {titulo:'Música piano', artista:'John Green', src:'musicas/A Brand New Start - TrackTribe (1).mp3', img:'imagens/piano.jpg'}
+    {titulo:'My Girl ', artista:'The Temptations', src:'musicas/The Temptations - My Girl (tradução,legendadoletra,lyric).mp3', img:'imagens/erasmo.jpg'},
+    {titulo:'Can I Be Him', artista:'James Arthur', src:'musicas/James Arthur - Can I Be Him.mp3', img:'imagens/erasmo.jpg'},
+    {titulo:'Never Be Alone', artista:'Shawn Mendes', src:'musicas/Shawn Mendes - Never Be Alone (Official Audio).mp3', img:'imagens/samba.jpg'},
+    {titulo:'Pra Ter O Seu Amor', artista:'Jorge & Matheus', src:'musicas/Pra Ter O Seu Amor (Live In Sao Paulo  2010).mp3', img:'imagens/piano.jpg'},
+    {titulo:'Gatinha Manhosa', artista:'Erasmo Carlos', src:'musicas/Gatinha Manhosa.mp3', img:'imagens/piano.jpg'}
 ];
 
 let musica = document.querySelector('audio');
 let indexMusica = 0;
 
-let duracaoMusica = document.querySelector('.fim');
-let imagem = document.querySelector('img');
+
+
 let nomeMusica = document.querySelector('.descricao div');
 let nomeArtista = document.querySelector('.descricao i');
 
@@ -19,19 +26,19 @@ document.querySelector('.botao-play').addEventListener('click', tocarMusica);
 
 document.querySelector('.botao-pause').addEventListener('click', pausarMusica);
 
-musica.addEventListener('timeupdate', atualizarBarra);
+
 
 document.querySelector('.anterior').addEventListener('click', () => {
     indexMusica--;
     if (indexMusica < 0) {
-        indexMusica = 2;
+        indexMusica = 4;
     }
     renderizarMusica(indexMusica);
 });
 
 document.querySelector('.proxima').addEventListener('click', () => {
     indexMusica++;
-    if (indexMusica > 2){
+    if (indexMusica > 4){
         indexMusica = 0;
     }
     renderizarMusica(indexMusica);
@@ -43,8 +50,8 @@ function renderizarMusica(index){
     musica.addEventListener('loadeddata', () => {
         nomeMusica.textContent = musicas[index].titulo;
         nomeArtista.textContent = musicas[index].artista;
-        imagem.src = musicas[index].img;
-        duracaoMusica.textContent = segundosParaMinutos(Math.floor(musica.duration));
+        
+        
     });
 }
 
@@ -60,12 +67,6 @@ function pausarMusica(){
     document.querySelector('.botao-play').style.display = 'block';
 }
 
-function atualizarBarra(){
-    let barra = document.querySelector('progress');
-    barra.style.width = Math.floor((musica.currentTime / musica.duration) * 100) + '%';
-    let tempoDecorrido = document.querySelector('.inicio');
-    tempoDecorrido.textContent = segundosParaMinutos(Math.floor(musica.currentTime));
-}
 
 function segundosParaMinutos(segundos){
     let campoMinutos = Math.floor(segundos / 60);
