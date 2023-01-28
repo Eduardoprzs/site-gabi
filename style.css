@@ -1,3 +1,14 @@
+.espacamento{
+    height: 100px;
+}
+
+.espaco-img{
+    height: 650px;
+    width: 600px;
+}
+
+
+
 .teste{
     display: none;
     
@@ -200,4 +211,10 @@ progress {
    .comentmudar{
     display: none;
    }
+   .espaco-img{
+    height: 100%;
+    width: 100%;
+}
+
+
 }
