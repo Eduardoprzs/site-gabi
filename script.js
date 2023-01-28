@@ -1,7 +1,4 @@
-window.onload = function(){
-    document.querySelector('.botao-pause').style.display = 'block';
-    document.querySelector('.botao-play').style.display = 'none';
-}
+
 
 let musicas = [
     {titulo:'My Girl ', artista:'The Temptations', src:'musicas/The Temptations - My Girl (tradução,legendadoletra,lyric).mp3', img:'imagens/erasmo.jpg'},
