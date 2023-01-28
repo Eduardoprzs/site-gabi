@@ -3,9 +3,9 @@
 let musicas = [
     {titulo:'My Girl ', artista:'The Temptations', src:'musicas/The Temptations - My Girl (tradução,legendadoletra,lyric).mp3'},
     {titulo:'Can I Be Him', artista:'James Arthur', src:'musicas/James Arthur - Can I Be Him.mp3'},
-    {titulo:'Never Be Alone', artista:'Shawn Mendes', src:'musicas/Shawn Mendes - Never Be Alone (Official Audio).mp3'},
+    {titulo:'Those Eyes', artista:'New West', src:'musicas/New West - Those Eyes.mp3'},
     {titulo:'Pra Ter O Seu Amor', artista:'Jorge & Matheus', src:'musicas/Pra Ter O Seu Amor (Live In Sao Paulo  2010).mp3'},
-    {titulo:'Gatinha Manhosa', artista:'Erasmo Carlos', src:'musicas/Gatinha Manhosa.mp3'},
+    {titulo:'Never Be Alone', artista:'Shawn Mendes', src:'musicas/Shawn Mendes - Never Be Alone (Official Audio).mp3'},
     {titulo:'Stand By Me', artista:'Ben E. King', src:'musicas/Ben E. King - Stand By Me (HQ Video Remastered In 1080p).mp3'},
     {titulo:'Back in Black', artista:'Ac/Dc', src:'musicas/AC DC - Back in black(HQ-Official video)(Lyrics in description).mp3'}
     
@@ -50,6 +50,7 @@ function renderizarMusica(index){
     musica.addEventListener('loadeddata', () => {
         nomeMusica.textContent = musicas[index].titulo;
         nomeArtista.textContent = musicas[index].artista;
+        
         
         
     });

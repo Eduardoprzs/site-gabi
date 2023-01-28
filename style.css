@@ -177,6 +177,13 @@ progress {
     justify-content: center;
     margin-top: 12px;
 }
+.commts{
+    margin-bottom: 100px;
+}
+.commts2{
+    margin-top: 50px;
+}
+
 
 @media (max-width: 414px){
    

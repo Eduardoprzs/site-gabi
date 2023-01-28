@@ -9,3 +9,4 @@ function esconder(){
     texto.style.display = 'none'
     ret.style.visibility = 'visible'
 }
+
