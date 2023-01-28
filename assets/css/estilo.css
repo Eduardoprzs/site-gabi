@@ -46,21 +46,12 @@
     transform: scale(1.1);
 }
 
-.cartao2:hover{
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
-}
 
 .cartao{
     
-    height: 500px;
+    height: 570px;
 }
-.cartao2{
-    
-    height: 500px;
-    
-}
+
 
 
 .containercaroousel{

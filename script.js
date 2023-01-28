@@ -1,11 +1,14 @@
 
 
 let musicas = [
-    {titulo:'My Girl ', artista:'The Temptations', src:'musicas/The Temptations - My Girl (tradução,legendadoletra,lyric).mp3', img:'imagens/erasmo.jpg'},
-    {titulo:'Can I Be Him', artista:'James Arthur', src:'musicas/James Arthur - Can I Be Him.mp3', img:'imagens/erasmo.jpg'},
-    {titulo:'Never Be Alone', artista:'Shawn Mendes', src:'musicas/Shawn Mendes - Never Be Alone (Official Audio).mp3', img:'imagens/samba.jpg'},
-    {titulo:'Pra Ter O Seu Amor', artista:'Jorge & Matheus', src:'musicas/Pra Ter O Seu Amor (Live In Sao Paulo  2010).mp3', img:'imagens/piano.jpg'},
-    {titulo:'Gatinha Manhosa', artista:'Erasmo Carlos', src:'musicas/Gatinha Manhosa.mp3', img:'imagens/piano.jpg'}
+    {titulo:'My Girl ', artista:'The Temptations', src:'musicas/The Temptations - My Girl (tradução,legendadoletra,lyric).mp3'},
+    {titulo:'Can I Be Him', artista:'James Arthur', src:'musicas/James Arthur - Can I Be Him.mp3'},
+    {titulo:'Never Be Alone', artista:'Shawn Mendes', src:'musicas/Shawn Mendes - Never Be Alone (Official Audio).mp3'},
+    {titulo:'Pra Ter O Seu Amor', artista:'Jorge & Matheus', src:'musicas/Pra Ter O Seu Amor (Live In Sao Paulo  2010).mp3'},
+    {titulo:'Gatinha Manhosa', artista:'Erasmo Carlos', src:'musicas/Gatinha Manhosa.mp3'},
+    {titulo:'Stand By Me', artista:'Ben E. King', src:'musicas/Ben E. King - Stand By Me (HQ Video Remastered In 1080p).mp3'},
+    {titulo:'Back in Black', artista:'Ac/Dc', src:'musicas/AC DC - Back in black(HQ-Official video)(Lyrics in description).mp3'}
+    
 ];
 
 let musica = document.querySelector('audio');
@@ -28,14 +31,14 @@ document.querySelector('.botao-pause').addEventListener('click', pausarMusica);
 document.querySelector('.anterior').addEventListener('click', () => {
     indexMusica--;
     if (indexMusica < 0) {
-        indexMusica = 4;
+        indexMusica = 6;
     }
     renderizarMusica(indexMusica);
 });
 
 document.querySelector('.proxima').addEventListener('click', () => {
     indexMusica++;
-    if (indexMusica > 4){
+    if (indexMusica > 6){
         indexMusica = 0;
     }
     renderizarMusica(indexMusica);

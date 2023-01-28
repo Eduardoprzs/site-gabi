@@ -167,6 +167,16 @@ progress {
    display: none
 }
 
+.audio-msuca{
+    width: 230px;
+   margin-left: 25PX;
+  height: 25px;
+}
+.nomemscpref{
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+}
 
 @media (max-width: 414px){
    
