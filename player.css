@@ -108,25 +108,28 @@
   color: #ff3677;
 }
 .player .volume-box {
+  width: 100px;
   display: none;
   position: absolute;
-  left: 50%;
+  left: 45%;
   top: 295px;
   transform: translateX(-50%);
   z-index: 1;
   padding: 0 20px;
 }
 .player .volume-box .volume-down {
+  
   position: absolute;
-  left: -15px;
+  left: -5px;
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
   color: #72646f;
 }
 .player .volume-box .volume-up {
+  left: 140px;
   position: absolute;
-  right: -15px;
+  right: 20px;
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
@@ -137,11 +140,13 @@
 }
 .player .volume-box input[type="range"] {
   height: 5px;
-  width: 150px;
+  width: 120px;
   margin: 0 0 15px 0;
 }
 .player .volume-box.active {
   display: block;
+  width: 160px;
+  margin-left: 15px;
 }
 .player .music-box {
   position: absolute;
